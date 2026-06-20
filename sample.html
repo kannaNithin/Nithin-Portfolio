@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:
+            radial-gradient(circle at top left, rgba(0,255,255,0.15), transparent 25%),
+            radial-gradient(circle at top right, rgba(255,0,255,0.12), transparent 25%),
+            radial-gradient(circle at bottom, rgba(0,100,255,0.12), transparent 30%),
+            linear-gradient(135deg, #050816, #0a0f1f, #050816);
+
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+        .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .images img{
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        object-fit: cover;
+
+        /* Neon Blue Ring */
+        border: 8px solid #00e5ff;
+
+        /* Blue Glow Effect */
+        box-shadow:
+            0 0 20px #00e5ff,
+            0 0 40px #00e5ff,
+            0 0 80px #00e5ff,
+            0 0 120px #00e5ff;
+
+        /* Neon Blue Background */
+        background:
+            radial-gradient(circle,
+            rgba(0,229,255,0.4) 0%,
+            rgba(0,229,255,0.2) 40%,
+            rgba(0,0,0,0) 70%);
+
+        transition: 0.5s;
+    }
+
+    .images img:hover{
+        transform: scale(1.05);
+
+        box-shadow:
+            0 0 30px #00e5ff,
+            0 0 60px #00e5ff,
+            0 0 120px #00e5ff,
+            0 0 180px #00e5ff;
+    }
+    
+
+    </style>
+</head>
+<body>
+    <div class="images">
+        <img src="mainimg.png" alt="mainimage">
+    </div>
+    <a href="https://wa.me/919866197727" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+    </a>
+    <a href="https://wa.me/919866197727?text=Hello%20I%20visited%20your%20portfolio"
+   target="_blank">
+   <i class="fa-brands fa-whatsapp"></i> Message Me
+</a>
+<a href="https://api.whatsapp.com/send?phone=919866197727" target="_blank">
+    Chat on WhatsApp
+</a>
+    
+</body>
+</html>

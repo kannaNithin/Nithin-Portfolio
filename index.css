@@ -3033,3 +3033,7 @@ grid-column:span 1;
     transform:translateY(-5px);
 
 }
+.footer h2 span{
+    color: #ee09a9;
+    text-shadow: 0px 0px 15px #ee09a9e5;
+}

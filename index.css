@@ -185,15 +185,16 @@ header:hover{
     justify-content: space-between;
 }
 .home h1{
-    color: hsla(0, 0%, 100%, 0.648);
-    font-size: 50px;
+    color:#fff;
+
+    font-size:50px;
     text-align: center;
     margin-top: 90px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 .home h2{
-    color: hsla(0, 0%, 100%, 0.864);
+    color: hsla(0, 0%, 100%, 0.739);
     font-size: 60px;
     
     margin-top: 40px;
@@ -222,18 +223,30 @@ header:hover{
 
 
 .skills h1{
-    color: hsla(0, 0%, 100%, 0.648);
-    font-size: 50px;
+    /* color: hsla(0, 0%, 100%, 0.648); */
+    color:#fff;
+
+    font-size:50px;
+    /* font-size: 50px; */
     text-align: center;
     margin-top: 90px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .skills h2{
-    color: hsla(0, 0%, 100%, 0.648);
-    font-size: 50px;
+    /* color: hsla(0, 0%, 100%, 0.648);
+    font-size: 50px; */
+    color:#fff;
+
+    font-size:50px;
     transform: translateX(30px);
     margin-top: 90px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.skills h2 span{
+    color:#00d9ff;
+
+    text-shadow:0 0 15px #00d9ff;
+
 }
 .technical{
     display: flex;
@@ -2604,3 +2617,419 @@ font-size:14px;
     }
     
     }
+    .footer{
+
+        margin-top:100px;
+    
+        padding:50px 20px;
+    
+        text-align:center;
+    
+        background:rgba(8,12,30,.95);
+    
+        border-top:1px solid rgba(0,229,255,.25);
+    
+    }
+    
+    .footer h2{
+    
+        color:#fff;
+    
+        font-size:30px;
+    
+    }
+    
+    .footer p{
+    
+        color:#bdbdbd;
+    
+        margin-top:10px;
+    
+    }
+    
+    .footer-icons{
+    
+        margin:30px 0;
+    
+    }
+    
+    .footer-icons a{
+    
+        color:#00d9ff;
+    
+        font-size:32px;
+    
+        margin:0 18px;
+    
+        transition:.4s;
+    
+    }
+    
+    .footer-icons a:hover{
+    
+        color:#fff;
+    
+        text-shadow:0 0 20px #00d9ff;
+    
+        transform:translateY(-5px);
+    
+    }
+    
+    .copyright{
+    
+        margin-top:20px;
+    
+        color:#888;
+    
+        font-size:15px;
+    
+    }
+    /*==============================
+        ABOUT SECTION
+===============================*/
+
+.about{
+
+    padding:100px 8%;
+
+}
+
+.about-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.about-title h1{
+
+    color:#fff;
+
+    font-size:60px;
+
+}
+
+.about-title h1 span{
+
+    color:#00d9ff;
+
+    text-shadow:0 0 15px #00d9ff;
+
+}
+
+.about-title p{
+
+    color:#bdbdbd;
+
+    margin-top:15px;
+
+    font-size:18px;
+
+}
+
+.about-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.about-card{
+
+    background:rgba(15,18,35,.65);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(0,229,255,.25);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    transition:.5s;
+
+    box-shadow:
+    0 0 20px rgba(0,229,255,.15);
+
+}
+
+.about-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+    0 0 30px #00d9ff,
+
+    0 0 60px rgba(0,229,255,.20);
+
+}
+
+.about-card i{
+
+    font-size:45px;
+
+    color:#00d9ff;
+
+    margin-bottom:20px;
+
+}
+
+.about-card h2{
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+.about-card p{
+
+    color:#d4d4d4;
+
+    line-height:1.8;
+
+}
+
+/*==============================
+        EDUCATION
+===============================*/
+
+.education-card{
+
+    grid-column:span 2;
+
+}
+
+.edu-box{
+
+    margin-top:25px;
+
+    padding:20px;
+
+    border-left:4px solid #00d9ff;
+
+    background:rgba(255,255,255,.03);
+
+    border-radius:12px;
+
+    transition:.4s;
+
+}
+
+.edu-box:hover{
+
+    transform:translateX(10px);
+
+    background:rgba(0,229,255,.08);
+
+}
+
+.edu-box h3{
+
+    color:white;
+
+    margin-bottom:8px;
+
+    font-size:22px;
+
+}
+
+.edu-box p{
+
+    color:#cccccc;
+
+    margin-bottom:5px;
+
+}
+
+.edu-box span{
+
+    color:#00d9ff;
+
+    font-weight:600;
+
+}
+
+/*==============================
+      MOBILE RESPONSIVE
+===============================*/
+
+@media(max-width:768px){
+
+.about{
+
+padding:70px 5%;
+
+}
+
+.about-title h1{
+
+font-size:42px;
+
+}
+
+.about-container{
+
+grid-template-columns:1fr;
+
+}
+
+.education-card{
+
+grid-column:span 1;
+
+}
+
+}
+/*==============================
+    HERO BUTTONS MOBILE
+===============================*/
+
+@media screen and (max-width:768px){
+
+    .hero-buttons{
+    
+        margin-top:25px;
+    
+        margin-left:0;
+    
+        transform:none;
+    
+        display:flex;
+    
+        flex-direction:column;
+    
+        align-items:center;
+    
+        justify-content:center;
+    
+        gap:15px;
+    
+        width:100%;
+    
+    }
+    
+    .hero-buttons a{
+    
+        width:90%;
+    
+        max-width:280px;
+    
+        justify-content:center;
+    
+        padding:14px 20px;
+    
+        font-size:16px;
+    
+    }
+    
+    .resume-btn{
+    
+        background:#00d9ff;
+    
+        color:#07131f;
+    
+    }
+    
+    .hire-btn{
+    
+        border:2px solid #00d9ff;
+    
+        color:#00d9ff;
+    
+    }
+    
+    }
+
+
+
+
+
+
+
+/*==========================
+      HERO BUTTONS
+===========================*/
+
+.hero-buttons{
+
+    margin-top:30px;
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+    margin-left: -800px;
+    transform: translateY(180px);
+
+}
+
+.hero-buttons a{
+
+    text-decoration:none;
+
+    padding:14px 28px;
+
+    border-radius:50px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+/* Resume Button */
+
+.resume-btn{
+
+    background:#00d9ff;
+
+    color:#07131f;
+
+    box-shadow:0 0 20px #00d9ff;
+
+}
+
+.resume-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 35px #00d9ff;
+
+}
+
+/* Hire Me Button */
+
+.hire-btn{
+
+    border:2px solid #00d9ff;
+
+    color:#00d9ff;
+
+}
+
+.hire-btn:hover{
+
+    background:#00d9ff;
+
+    color:#07131f;
+
+    box-shadow:0 0 30px #00d9ff;
+
+    transform:translateY(-5px);
+
+}
